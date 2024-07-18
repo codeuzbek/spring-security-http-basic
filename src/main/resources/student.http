@@ -1,0 +1,29 @@
+### Create task
+POST localhost:8080/task
+Content-Type: application/json
+Authorization: Basic dXNlcjo2ODgxM2E0ZS0zYTMwLTQzODYtODk0Zi0yZWI2MDgxNzExYjE=
+
+{
+  "title": "Sartarosh",
+  "content": "Sartaroshba borib sochni oldirish kerak"
+}
+
+### Get all task
+GET localhost:8080/task
+
+### Get by id
+GET localhost:8080/task/3fd662b3-6068-42ce-8c2b-100ad9ed6b56
+Authorization: Basic dXNlcjo2ODgxM2E0ZS0zYTMwLTQzODYtODk0Zi0yZWI2MDgxNzExYjE=
+
+### Update task
+PUT localhost:8080/task/3fd662b3-6068-42ce-8c2b-100ad9ed6b56
+Content-Type: application/json
+Authorization: Basic dXNlcjo2ODgxM2E0ZS0zYTMwLTQzODYtODk0Zi0yZWI2MDgxNzExYjE=
+
+{
+  "title": "Sartarosh",
+  "content": "Sartaroshba borib sochni oldirish kerak mazgi."
+}
+### Delete
+GET localhost:8080/task/3fd662b3-6068-42ce-8c2b-100ad9ed6b56
+Authorization: Basic dXNlcjo2ODgxM2E0ZS0zYTMwLTQzODYtODk0Zi0yZWI2MDgxNzExYjE=
